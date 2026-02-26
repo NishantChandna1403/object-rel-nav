@@ -49,6 +49,12 @@ In `./data/`, sym link the following downloads as subdirs: `hm3d v0.2`, `instanc
   - **hm3d-val-semantic-configs-v0.2.tar** (40K) - [Download](https://api.matterport.com/resources/habitat/hm3d-val-semantic-configs-v0.2.tar)
 
   These downloaded `hm3d-val*` can be extracted to `./data/hm3d_v0.2/val/`
+  rsync -av hm3d-val-glb-v0.2/ .
+  rsync -av hm3d-val-habitat-v0.2/ .
+  rsync -av hm3d-val-semantic-annots-v0.2/ .
+  rsync -av hm3d-val-semantic-configs-v0.2/ .
+  
+  rm -rf hm3d-val-glb-v0.2 hm3d-val-habitat-v0.2 hm3d-val-semantic-annots-v0.2 hm3d-val-semantic-configs-v0.2
 
 
 - Download official `InstanceImageNav` challenge dataset from [here](https://dl.fbaipublicfiles.com/habitat/data/datasets/imagenav/hm3d/v3/instance_imagenav_hm3d_v3.zip) (Direct Link | ~512 mb)
